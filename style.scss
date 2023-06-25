@@ -52,11 +52,6 @@
       transition: .3s;
   }
 
-  //   .navbar a:hover,
-  //   a.active {
-  //       color: $primary-color;
-  //   }
-
   .navbar a.active,
   .navbar a:hover {
       background: linear-gradient(45deg, $primary-color, #0A66C2);
@@ -272,18 +267,19 @@
 
       .row-about {
           h1 {
-              font-size: 60px;
+              font-size: 50px;
               font-weight: 600;
               color: #363636;
           }
 
           p {
+              //   font-size: 20px;
               color: #363636;
           }
 
           .tab-titles {
               display: flex;
-              margin: 50px 0 40px;
+              margin: 20px 0 40px;
 
               .tab-links {
                   margin-right: 50px;
@@ -317,16 +313,24 @@
 
                   .img-stack {
                       display: flex;
+                      height: 80px;
                       flex-wrap: wrap;
                       gap: 20px;
+
                       justify-content: start;
                   }
               }
 
               ul {
+                  display: flex;
+                  flex-wrap: wrap;
+                  height: 80px;
+                  justify-content: start;
+                  align-items: center;
+                  gap: 30px;
+
                   li {
                       list-style: none;
-                      margin: 10px 0;
 
                       span {
                           background: linear-gradient(45deg, $primary-color, #0A66C2);
@@ -353,7 +357,6 @@
       flex-direction: column;
       justify-content: center;
       padding: 0 10%;
-
 
       h1 {
           font-size: 60px;
@@ -386,6 +389,7 @@
               display: block;
               margin-left: auto;
               margin-right: auto;
+              border-radius: 10px 10px 2px 2px;
               width: 100%;
               margin-bottom: 10px;
           }
@@ -566,6 +570,16 @@
       }
   }
 
+  .header i {
+      display: none;
+  }
+
+  .msg {
+      display: block;
+      color: #ff004f;
+      font-size: 14px;
+  }
+
   //        |||||||  FOOTER  |||||||        //
 
   //   .footer {
@@ -582,11 +596,11 @@
   //       font-size: 12px;
   //   }
 
-  //        |||||||  SCSS for small screens  |||||||        //
+  //        |||||||  SCSS for small screens @MEDIA  |||||||        //
 
-  .header i {
-      display: none;
-  }
+
+
+
 
   @media only screen and (max-width: 1024px) {
       .home {
@@ -634,6 +648,12 @@
           height: 100vh;
           scroll-snap-align: start;
           overflow: hidden;
+      }
+
+      .row-about {
+          p {
+              font-size: 20px;
+          }
       }
   }
 
@@ -722,7 +742,7 @@
           }
       }
 
-      //        |||||||  @MEDIA  |||||||        //
+
 
 
       @media only screen and (max-width: 600px) {
@@ -841,6 +861,10 @@
               }
           }
       }
+
+      .works {
+          margin-top: 50px;
+      }
   }
 
   @media only screen and (max-width: 375px) {
@@ -883,6 +907,15 @@
                       width: 200px;
                       height: 200px;
                   }
+              }
+          }
+      }
+
+      .tab-contents {
+          ul {
+
+              li {
+                  font-size: 12px;
               }
           }
       }

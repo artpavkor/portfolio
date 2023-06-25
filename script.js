@@ -5,15 +5,13 @@ let sidemenu = document.getElementById('sidemenu');
 
 let sections = document.querySelectorAll('section');
 let navLinks = document.querySelectorAll('header nav a');
-console.log(sections);
+
 window.onscroll = () => {
     sections.forEach(sec => {
         let top = scrollY;
-        console.log(top);
         let offset = sec.offsetTop - 150;
         let height = sec.offsetHeight;
         let id = sec.getAttribute('id');
-        console.log(id);
 
         if (top >= offset && top < offset + height) {
             navLinks.forEach(links => {
