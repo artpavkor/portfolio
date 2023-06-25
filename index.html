@@ -192,11 +192,6 @@
             </div>
         </section>
     </div>
-    <!-- <footer>
-        <div class="footer">
-            <p class="copyright">Copyright © 2023</p>
-        </div>
-    </footer> -->
 </body>
 <script src="https://artpavkor.github.io/portfolio/script.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js">
@@ -211,10 +206,7 @@
         let body = 'name: ' + name + '<br/> email: ' + email + '<br/> message: ' + message;
         const msg = document.getElementById('msg')
         Email.send({
-            // SecureToken : "C973D7AD-F097-4B95-91F4-40ABC5567812",
-            Host: "smtp.elasticemail.com",
-            Username: "artpavkor@gmail.com",
-            Password: "9F887633C8F5C7EE0DD0C89720536F6FE9B3",
+            SecureToken: "8feaaffc-73e9-4ddb-a1c7-0f786e195895",
             To: 'artpavkor@gmail.com',
             From: 'artpavkor@gmail.com',
             Subject: email,
