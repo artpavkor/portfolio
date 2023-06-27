@@ -43,16 +43,16 @@
                     <h1>Front-End React JS Developer</h1>
                     <h3>Hi there! <br>I'm Artem Korniienko, a front-end developer with experience in React JS.<br>
                         <span>I'm based in Tallinn, Estonia. <i class='bx bxs-map bx-tada'></i></span>
-
                     </h3>
                     <div class="cv-social">
-                        <button class="btn">Download CV</button>
+                        <button class="btn" onclick="downloadFile()">Download CV</button>
                         <div class="social-icons-home">
                             <a href="https://www.facebook.com/profile.php?id=100023981804513" target="_blank"><i
                                     class='bx bxl-facebook-square'></i></a>
                             <a href="https://www.linkedin.com/in/artem-korniienko-b16498254/" target="_blank"><i
                                     class='bx bxl-linkedin-square'></i></a>
                             <a href="https://github.com/artpavkor" target="_blank"><i class='bx bxl-github'></i></a>
+
                         </div>
                     </div>
                 </div>
@@ -205,6 +205,14 @@
 </body>
 <script src="https://artpavkor.github.io/portfolio/script.js"></script>
 <script src="https://smtpjs.com/v3/smtp.js">
+</script>
+<script>
+    function downloadFile() {
+        var link = document.createElement('a');
+        link.href = 'https://artpavkor.github.io/portfolio/cv.pdf';
+        link.download = 'cv.pdf';
+        link.click();
+    }
 </script>
 <script>
     let btn = document.getElementById('btn-submit')
