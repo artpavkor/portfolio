@@ -230,6 +230,7 @@ body {
   color: #363636;
 }
 .about .row-about p {
+  margin: 3px 0;
   color: #363636;
 }
 .about .row-about .tab-titles {
@@ -295,7 +296,7 @@ body {
   padding: 0 10%;
 }
 .works h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   color: #363636;
   margin-bottom: 40px;
@@ -323,9 +324,10 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  border-radius: 10px 10px 2px 2px;
+  border-radius: 0.8em;
   width: 100%;
   margin-bottom: 10px;
+  box-shadow: rgba(99, 99, 99, 0.1) 0px 1px 2px 0px;
 }
 .works .card p {
   font-size: 14px;
@@ -389,7 +391,7 @@ body {
   align-items: center;
 }
 .contact .contact-section h1 {
-  font-size: 60px;
+  font-size: 50px;
   font-weight: 600;
   color: #363636;
   text-align: center;

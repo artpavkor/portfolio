@@ -273,7 +273,7 @@
           }
 
           p {
-              //   font-size: 20px;
+              margin: 3px 0;
               color: #363636;
           }
 
@@ -359,7 +359,7 @@
       padding: 0 10%;
 
       h1 {
-          font-size: 60px;
+          font-size: 50px;
           font-weight: 600;
           color: #363636;
           margin-bottom: 40px;
@@ -389,9 +389,10 @@
               display: block;
               margin-left: auto;
               margin-right: auto;
-              border-radius: 10px 10px 2px 2px;
+              border-radius: .8em;
               width: 100%;
               margin-bottom: 10px;
+              box-shadow: rgba(99, 99, 99, 0.1) 0px 1px 2px 0px;
           }
 
           p {
@@ -466,7 +467,7 @@
       .contact-section {
 
           h1 {
-              font-size: 60px;
+              font-size: 50px;
               font-weight: 600;
               color: #363636;
               text-align: center;
